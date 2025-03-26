@@ -1,0 +1,56 @@
+<hr size="1">
+<p>
+  ქვემოთ მოცემულია ფორმა, რომლის Label -ში გაწერილია dictionary -ის key-ები.
+  თქვენი ამოცანაა ეს Key-ები მოძებნოთ dictionary-ში და თუ არსებობს, გადათარგმნოთ
+  თუ არადა დატოვოთ როგორც არის.
+</p>
+<p>
+  მაგალითად userName -ის თავზე გვაქვს label, რომლის მნიშვნელობაცაა
+  form.label.username. <b>dictionary.ts</b> ფაილში არსებობს key რომელსაც
+  შეესაბამება ეს მნიშვნელობა, ხოლო value ში წერია ის რაც უნდა გამოვიდეს ფორმაზე.
+  ამ კონკრეტულ შემთხვევაში User Name.
+</p>
+
+<div class="form">
+
+  <div class="user-info">
+    <div class="column">
+      <label for="username">{{ findElementByKey('form.label.username') }}</label>
+      <input type="text" class="form-control" id="username" />
+    </div>
+    <div class="column">
+      <label for="email">{{ findElementByKey('form.label.email') }}</label>
+      <input type="email" class="form-control" id="email" />
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="acct-info">
+    <div class="column">
+      <label for="accttype">{{ findElementByKey('form.label.acctType') }}</label>
+      <input type="text" class="form-control" id="accttype" />
+    </div>
+    <div class="column">
+      <label for="acctno">{{findElementByKey('form.label.acctNo')}}</label>
+      <input type="text" class="form-control" id="acctno" />
+    </div>
+  </div>
+
+  <div class="card-info">
+    <div class="column">
+      <label for="cardtype">{{findElementByKey('form.label.cardType')}}</label>
+      <input type="text" class="form-control" id="cardtype" />
+    </div>
+    <div class="column">
+      <label for="cardno">{{findElementByKey('form.label.cardNo')}}</label>
+      <input type="text" class="form-control" id="cardno" />
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button class="btn primary">{{findElementByKey('form.button.save')}}</button>
+    <button class="btn danger">{{findElementByKey('form.button.delete')}}</button>
+  </div>
+
+</div>

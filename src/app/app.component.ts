@@ -6,7 +6,7 @@ import {TruncatePipe} from './textcutpipe.pipe';
 import {CustomTransformPipe} from './registerpipe.pipe';
 import {
   LabelDictionaryComponent
-} from './LabelDictionaryPipe/label-dictionary-pipe/label-dictionary.component';
+} from './label-dictionary-pipe/label-dictionary.component';
 
 @Component({
   selector: 'app-root',
