@@ -25,3 +25,6 @@ export class AppDirective {
     this.el.nativeElement.remove();
   }
 }
+
+export class MydirectiveDirective {
+}

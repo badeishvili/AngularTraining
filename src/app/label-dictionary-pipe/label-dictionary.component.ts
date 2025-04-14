@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LabelDictonaryPipe } from './label-dictonary.pipe';
+import { LabelDictionaryPipePipe } from './label-dictonary.pipe';
 import {NgIf} from '@angular/common';
 import {dictionary} from './dictionary';
 
@@ -9,7 +9,7 @@ import {dictionary} from './dictionary';
 @Component({
   selector: 'app-label-dictionary',
   imports: [
-    NgIf,
+
   ],
   templateUrl: './label-dictionary.component.html',
   styleUrl: './label-dictionary.component.css'

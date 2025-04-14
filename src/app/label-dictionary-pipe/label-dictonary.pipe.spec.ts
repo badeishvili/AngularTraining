@@ -1,8 +1,8 @@
-import { LabelDictonaryPipePipe } from './label-dictonary.pipe';
+import { LabelDictionaryPipePipe } from './label-dictonary.pipe';
 
-describe('LabelDictonaryPipePipe', () => {
+describe('LabelDictionaryPipePipe', () => {
   it('create an instance', () => {
-    const pipe = new LabelDictonaryPipePipe();
+    const pipe = new LabelDictionaryPipePipe();
     expect(pipe).toBeTruthy();
   });
 });

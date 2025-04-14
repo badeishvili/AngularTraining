@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'labelDictonaryPipe'
+  name: 'labelDictionaryPipe'
 })
-export class LabelDictonaryPipe implements PipeTransform {
+export class LabelDictionaryPipePipe implements PipeTransform {
 
   transform(dictionary: { [key: string]: any }, key: string): string {
     if (key in dictionary) {

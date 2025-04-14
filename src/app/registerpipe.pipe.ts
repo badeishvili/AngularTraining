@@ -11,3 +11,6 @@ export class CustomTransformPipe implements PipeTransform {
     return `${firstChar}${restOfString}${appendSymbol}`;
   }
 }
+
+export class RegisterpipePipe {
+}

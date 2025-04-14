@@ -8,3 +8,6 @@ export class TruncatePipe implements PipeTransform {
     return value.length > limit ? value.substring(0, limit) : value;
   }
 }
+
+export class TextcutpipePipe {
+}
