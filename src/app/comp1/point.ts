@@ -13,9 +13,9 @@ export class Point {
   }
 
   set x(value: number) {
+    this._x = value;
     if (this._x < 0) {
       throw new Error('X is less than 0');
-      this._x = value;
     }
 
   }
