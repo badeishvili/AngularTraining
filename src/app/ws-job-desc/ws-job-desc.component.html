@@ -1,0 +1,26 @@
+<!--<p>ws-job-desc works!</p>-->
+<form [formGroup]="jdform" class="border-colored">
+  <div>
+    <label for="country">Country: </label>
+
+    <select id="country" formControlName="country">
+      <option value="Georgia">Georgia</option>
+      <option value="USA">USA</option>
+      <option value="Germany">Germany</option>
+      <option value="Austria">Austria</option>
+      <option value="Belgium">Belgium</option>
+    </select>
+  </div>
+  <div>
+    <label for="firstName">First Name: </label>
+    <input id="firstName" type="text" formControlName="firstName">
+  </div>
+  <div>
+    <label for="lastname">Last Name: </label>
+    <input id="lastname" type="text" formControlName="lastName">
+  </div>
+  <div>
+    <label for="age">Age: </label>
+    <input id="age" type="text" formControlName="age">
+  </div>
+</form>
