@@ -1,0 +1,16 @@
+.border-colored {
+  border: 2px solid #3498db;
+}
+
+label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+}
+
+/*input {*/
+/*  display: inline-block;*/
+/*  float: left;*/
+/*}*/

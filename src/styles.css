@@ -1,3 +1,18 @@
 .active {
  background-color: #3498db;
 }/* You can add global styles to this file, and also import other style files */
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
+  /*background-color: antiquewhite;*/
+}
+h4 {
+  font-weight: bold;
+}
+
+.border-colored {
+  border: 2px solid #3498db;
+}

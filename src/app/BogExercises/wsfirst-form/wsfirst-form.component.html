@@ -1,6 +1,4 @@
-<p style="font-weight: bold;">Component : wsfirst-form works!</p>
-
-<form class="border-colored" [formGroup]="myform">
+<form [formGroup]="myform">
   <div>
     <label for="username">Username: </label>
     <input id="username" type="text" formControlName="username">
@@ -21,5 +19,4 @@
     <label for="confirmPassword">Confirm Password: </label>
     <input id="confirmPassword" type="text" formControlName="confirmpassword">
   </div>
-
 </form>

@@ -1,0 +1,11 @@
+
+    <div *ngIf="courses.length>0">
+      <h5>List of Courses / კურსების სია:</h5>
+      <ul>
+        <li *ngFor="let course of courses">  {{ course }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="courses.length==0">
+      <h5>No Courses Yet / მალე დაემატება</h5>
+    </div>

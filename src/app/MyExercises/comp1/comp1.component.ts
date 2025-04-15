@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import {NgIf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-comp1',
@@ -7,7 +7,8 @@ import {NgIf} from '@angular/common';
   templateUrl: './comp1.component.html',
   styleUrl: './comp1.component.css',
   imports: [
-    NgIf
+    NgIf,
+    NgForOf
   ]
 })
   export class HelloComp {

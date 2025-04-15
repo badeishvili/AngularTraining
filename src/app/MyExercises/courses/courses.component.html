@@ -1,12 +1,10 @@
-<p>courses works!</p>
 <h2>{{ title }}</h2>
-
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 <button class="btn" [class.active]="isActive">Class Binding </button>
 <button [style.background-color]="isActive ? 'yellow' : 'white' ">Style Binding </button>
 <button (click) = "onSave($event)" >Event Binding </button>
 
 <button [class.active] = "isFavorite ? 'glyphicon-star' : 'glyphicon-star-empty'"> </button>
-
 
 
 <!--<input (keyup.enter)="onKeyUp($event)">-->

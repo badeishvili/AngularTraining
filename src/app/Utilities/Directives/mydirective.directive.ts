@@ -4,7 +4,7 @@ import { Directive, ElementRef, Renderer2, HostListener, Input } from '@angular/
   selector: '[appDirective]'
 })
 export class AppDirective {
-  @Input() appDirective: string = "black";
+  @Input() appDirective: string = "orange";
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
     this.renderer.setStyle(this.el.nativeElement, 'background-color', this.appDirective);

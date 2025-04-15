@@ -1,0 +1,17 @@
+p {
+  padding: 10px;
+  font-size: small;
+  /*background-color: antiquewhite;*/
+}
+label{
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 150px;
+  text-align: right;
+}
+
+/*input {*/
+/*  display: inline-block;*/
+/*  float: left;*/
+/*}*/
