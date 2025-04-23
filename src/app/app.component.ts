@@ -21,11 +21,12 @@ import {SwitchComponent} from './MyExercises/switch/switch.component';
  import { CComponent } from './BogExercises/ABCD/c/c.component';
  import { DComponent } from './BogExercises/ABCD/d/d.component';
 import {LoggingService} from './Utilities/Services/logging.service';
+import {AuthComponent} from './BogExercises/auth/auth.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [HelloComp, WSFirstFormComponent, TodolistComponent, AppDirective, TruncatePipe, CustomTransformPipe, LabelDictionaryComponent, CoursesComponent, WsJobDescComponent, NotificationComponent, DummyDirective, PanelComponent, TweetlikeComponent, SwitchComponent, AComponent,BComponent,CComponent,DComponent],
+  imports: [HelloComp, WSFirstFormComponent, TodolistComponent, AppDirective, TruncatePipe, CustomTransformPipe, LabelDictionaryComponent, CoursesComponent, WsJobDescComponent, NotificationComponent, DummyDirective, PanelComponent, TweetlikeComponent, SwitchComponent, AComponent, BComponent, CComponent, DComponent, AuthComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   providers: [LoggingService]
