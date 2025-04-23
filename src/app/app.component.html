@@ -2,6 +2,17 @@
 <h1>Hello from {{ title }}!</h1>
 <a target="_blank" href="https://angular.dev/overview"> Learn more Angular </a>
 
+
+<!--------Exercise To Do List------------->
+<h4>Next Exercise - To Do List</h4>
+<hr size="1">
+<p> გვაქვს ასაწყობი to-do ლისტი.
+  გვაქვს ინფუთი რომ ლისტში დავამატოთ ელემენტი, დავაჭერთ სეივ ღილაკს და ეს ელემენტი დაემატება ლისტს.
+  ქვემოთ გამოვიტანთ ამ ლისტს ngfor-ით</p>
+<hr size="1">
+<app-todolist></app-todolist>
+<hr size="5" color=Orange>
+
 <!--------Exercise Directive------------->
 <div>
   <br>
@@ -75,6 +86,40 @@
 </p>
 <hr size="1">
 <app-label-dictionary></app-label-dictionary>
+<hr size="5" color=Orange>
+
+
+<!--------Exercise Logging Service------------->
+<h4>Bog Exercise - Loggingservice</h4>
+<hr size="1">
+<p> საშინაო დავალება 2
+  <li>მოცემული გვაქვს ცომპონენტები :
+    app-A, app-B, app-C, app-D შემდეგი იერარქიით
+    app-A > app-B > app-C > app-D
+  </li>
+  <li>ასევე გაქვთ ერთი სერვიცი სახელად loggingService</li>
+  <li>app-B,app-C,app-D კომპონეტებისთვის უნდა იყოს ერთი სერვისის ინსტანსი ხოლო</li>
+  <li>app-A თვის ცალკე ინსტანსი.</li>
+  <li>შექმენით ცვლადით container loggingService -ში, სადაც შეინახავ მნიშვნელობებს. შეგიძლია გამოიყენოთ
+    ფუნქციები მნიშვნელობის გასანახლებლად. მაგალითად: getData() &#123;return this.container&#125;;
+  </li>
+  <li>ყველა კომპონენტის დონეზე გააკეთეთ დალოგვა container ში რა არის და ყველა კომპონენტს უნდა შეეძლოს
+    container -ის მნიშვნელობის განახლება.
+  </li>
+</p>
+<hr size="1">
+<div>
+  <app-a></app-a>
+</div>
+<div>
+  <app-b></app-b>
+</div>
+<div>
+  <app-c></app-c>
+</div>
+<div>
+  <app-d></app-d>
+</div>
 <hr size="5" color=Orange>
 
 <!--------Exercise Just build first form------------->
@@ -161,12 +206,27 @@
 </tweetlike>
 <hr size="5" color=Orange>
 
+<!--------Exercise Switch------------->
+<h4>Switch Exercise - SwitchComponent</h4>
+<hr size="1">
+<p> ngswithch-ის გამოყენება</p>
+<hr size="1">
+<app-switch></app-switch>
+<hr size="5" color=Orange>
+
+
+
+
 
 <br><br><br><br><br>
+
 <!--------Exercise Template------------->
 <h4>Next Exercise - Template</h4>
 <hr size="1">
-<p> ამოცანის პირობა</p>
+<p> ამოცანის პირობა
+</p>
 <hr size="1">
-<p>ამოხსნა</p>
+<div>
+  ამოხსნა
+</div>
 <hr size="5" color=Orange>
