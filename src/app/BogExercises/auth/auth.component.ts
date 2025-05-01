@@ -29,7 +29,7 @@ export class AuthComponent {
 
   updateStatus(): void {
     if (this.authService.isLoggedIn()) {
-      this.statusMessage = 'User is logged in';
+      this.statusMessage = '';
     } else {
       this.statusMessage = 'User is not logged in';
     }

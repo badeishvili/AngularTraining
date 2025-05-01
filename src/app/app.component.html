@@ -3,15 +3,73 @@
 <a target="_blank" href="https://angular.dev/overview"> Learn more Angular </a>
 
 
+
+
+<!--------Exercise Template------------->
+<h4>Next Exercise - Template</h4>
+<hr size="1">
+<p> Routing დავალება
+  <li>1. შექმენით როუტინგი eager loading ით მოცემული მენიუების მიხედვით , home, news, about.</li>
+  <li>როუტინგი დაამისამართეთ content დივში</li>
+  <li>home ზე დჭერის შემდეგ გადავიდეს HomeComponent  ზე და ა.შ;</li>
+  <li>2. შექმენით 404 Error Page ნებისმიერი არასწორი როუტის აკრეფის დროს გადავიდეს 404 ზე;</li>
+  <li>3. თითოეულ ტაბს გაუკეთეთ activeLink რომელიც გულისხმობს ტაბზე დაჭერის შემდეგ ამ ტაბის მწვანე ფონის მიცემას, გამოიყენეთ routerLinkActive</li>
+  <li>4. about ტაბში გვაქვს Nav To Home ბათონი, რომელზე დაკლიკების შემდეგ უნდა მოხდეს Home ზე გადამისამართება</li>
+  <li>5. about ტაბში გვაქვს Nav To Home With ID ბათონი, რომელზე დაკლიკების შემდეგ უნდა მოხდეს Home ზე გადამისამართება და პარამეტრებში გაყვეს 12. ასე რომ გამოვიდეს http://localhost:4200/home/12</li>
+  <li>6. about ტაბში გვაქვს Nav To Home With Query ბათონი, რომელზე დაკლიკების შემდეგ უნდა მოხდეს Home ზე გადამისამართება და query პარამეტრებში გაყვეს შემდეგნაირად.
+    ასე რომ გამოვიდეს http://localhost:4200/home?id=12&name=test</li>
+</p>
+<hr size="1">
+
+<!--<div class="content">-->
+<!--  <router-outlet>-->
+<!--    <app-about></app-about><br>-->
+<!--    <app-home></app-home><br>-->
+<!--    <app-news></app-news><br>-->
+<!--    <app-page-not-found></app-page-not-found><br>-->
+<!--  </router-outlet>-->
+<!--</div>-->
+
+  <button routerLink="/home">Home</button><br>
+  <button routerLink="/about">About Page</button> <br>
+  <a routerLink="/news">News Page</a> <br>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+<hr size="5" color=Orange>
+
+
 <!--------Exercise To Do List------------->
+<br><br><br>
+<hr size="5" color=Orange>
 <h4>Next Exercise - To Do List</h4>
 <hr size="1">
-<p> გვაქვს ასაწყობი to-do ლისტი.
-  გვაქვს ინფუთი რომ ლისტში დავამატოთ ელემენტი, დავაჭერთ სეივ ღილაკს და ეს ელემენტი დაემატება ლისტს.
-  ქვემოთ გამოვიტანთ ამ ლისტს ngfor-ით</p>
+<ol>
+  <li>
+    Task-list კომპონენტში მოცემულია li ტაგი, რომელისაც მოდებული აქვს NgFor
+    დირექტივა. თქვენი ამოცანაა ცალკე კომპონენტი ააწყოთ სადაც li ტაგის ფუნქციონალ
+    გაიტანთ. *Hint ngFor დირექტივა უცვლელად დატოვეთ. გამოიყენეთ task ცვლადი
+    რომელიც HTML შია ნაჩვენები. არც ng-container-ში არ არის შესაცვლელი რაიმე.
+  </li>
+  <li>
+    გამართეთ Task Form კომპონენტი. Task Form კომპონენტმა უნდა დაამაატოს ახალი
+    ჩანაწერი სიაში.
+  </li>
+  <li>
+    Complete ღილაკზე დაჭერისას Button უნდა გავიდეს Disable -ზე და ტექს მიანიჭეთ completed (css კლასი) კლასი. რომელიც
+    გააუჭერულებს და ხაზს გადაუსვამს ტექსტს. კლასი გაწერილია task-list.component.css
+  </li>
+</ol>
 <hr size="1">
-<app-todolist></app-todolist>
-<hr size="5" color=Orange>
+  <app-task-form (title)="onTitleChange($event)"></app-task-form>
+<app-task-list [newTask]="taskFormTitle"></app-task-list>
+<hr size="1">
+
+
+
+
 
 <!--------Exercise Directive------------->
 <div>
@@ -234,8 +292,14 @@
 <app-switch></app-switch>
 <hr size="5" color=Orange>
 
-
-
+<!--------Exercise Contact Form------------->
+<h4>My Exercise - Contact Form</h4>
+<hr size="1">
+<p> ამოცანის პირობა: Building a bootstrap form
+</p>
+<hr size="1">
+<app-contactform></app-contactform>
+<hr size="5" color=Orange>
 
 
 <br><br><br><br><br>
